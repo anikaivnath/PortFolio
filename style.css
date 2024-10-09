@@ -1,0 +1,66 @@
+/* Base styles */
+.body-style {
+    background-color: #3f3d56; /* Matches indigo-950 */
+    color: #f1f5f9; /* Matches slate-50 */
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Navbar styles */
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+}
+
+.brand-name {
+    margin: 0;
+    font-size: 18px;
+}
+
+.menu-icon {
+    margin: 0;
+    display: none;
+}
+
+.nav-links a {
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    position: fixed;
+    
+}
+
+.nav-links a:hover {
+    color: black;
+}
+
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .menu-icon {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    .menu-icon {
+        display: none; 
+    }
+
+    .nav-links {
+        display: block;
+    }
+}
