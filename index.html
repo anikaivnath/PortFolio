@@ -267,7 +267,7 @@ I believe that good design is not just about looks—it's about functionality, c
             </div>
         </div>
         <div class="text-center mt-3">
-            <button class="hover:bg-gray-300 p-2 border-2 border-black rounded-md ring-offset-slate-400 font-bold">Submit</button>
+            <button id="submit" class="hover:bg-gray-300 p-2 border-2 border-black rounded-md ring-offset-slate-400 font-bold">Submit</button>
         </div>
     </div>
 </div>
@@ -299,6 +299,11 @@ I believe that good design is not just about looks—it's about functionality, c
     menuBtn.addEventListener('click', () => {
       mobileMenu.classList.toggle('hidden');
     });
+    const subBtn = document.getElementById('submit');
+ 
+
+    subBtn.addEventListener('click', () => {
+      alert("submitted") });
   </script>
 
 
